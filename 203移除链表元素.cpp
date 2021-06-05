@@ -23,7 +23,9 @@ class Solution
 public:
     ListNode *removeElements(ListNode *head, int val)
     {
+        // 生成新的头结点指向链表
         ListNode *newHead = new ListNode(0, head);
+        // 使用链表类型指针p 指向新的头结点
         ListNode *p = newHead;
         while (p->next)
         {

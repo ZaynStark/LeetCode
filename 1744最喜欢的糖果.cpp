@@ -22,13 +22,13 @@ public:
             long long lowersum = (q[0] == 0 ? 1 : pre_sum[q[0] - 1] + 1);
             answer.push_back(!(lowersum > max || pre_sum[q[0]] < min));
         }
-        for (int k = 0; k < queries.size(); k++)
-        {
-            long long min = queries[k][1] + 1;
-            long long max = min * queries[k][2];
-            long long lowersum = (queries[k][0] == 0 ? 1 : pre_sum[queries[k][0] - 1] + 1);
-            answer.push_back(!(lowersum > max || pre_sum[queries[k][0]] < min));
-        }
+        // for (int k = 0; k < queries.size(); k++)
+        // {
+        //     long long min = queries[k][1] + 1;
+        //     long long max = min * queries[k][2];
+        //     long long lowersum = (queries[k][0] == 0 ? 1 : pre_sum[queries[k][0] - 1] + 1);
+        //     answer.push_back(!(lowersum > max || pre_sum[queries[k][0]] < min));
+        // }
         return answer;
     }
 };

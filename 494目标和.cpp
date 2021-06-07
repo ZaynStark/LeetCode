@@ -1,6 +1,8 @@
 #include <vector>
 using namespace std;
-
+/*
+使用深度优先搜索（dfs）
+*/ 
 class Solution
 {
 public:

@@ -6,6 +6,7 @@ class Solution
 public:
     int lastStoneWeightII(vector<int> &stones)
     {
+        // accumulate包括在numeric头文件中
         int sum = accumulate(stones.begin(), stones.end(), 0);
         int m = sum / 2;
         vector<int> dp(m + 1);

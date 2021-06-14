@@ -7,6 +7,8 @@
  * int guess(int num);
  */
 
+int guess(int num);
+
 class Solution
 {
 public:

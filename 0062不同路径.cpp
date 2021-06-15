@@ -1,6 +1,8 @@
 #include <vector>
 using namespace std;
-
+/*
+思考：能否进行空间上的优化？
+*/ 
 class Solution
 {
 public:
